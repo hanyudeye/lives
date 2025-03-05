@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客导航站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .navigation h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .navigation small {
+            font-size: 1.2em;
+            color: #666;
+            display: block;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 6px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .blog-title a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .blog-title a:hover {
+            color: #3498db;
+        }
+
+        .blog-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <h1>博客导航</h1>
+        <small>优质独立博客导航</small>
+    </div>
+    <div class="blog-grid">
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.ruanyifeng.com/blog/" target="_blank">阮一峰的网络日志</a>
+            </h3>
+            <p class="blog-description">关注科技、编程、互联网等领域的深度思考</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.yinwang.org/" target="_blank">王垠的博客</a>
+            </h3>
+            <p class="blog-description">编程语言与设计的独特见解</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://coolshell.cn/" target="_blank">酷壳</a>
+            </h3>
+            <p class="blog-description">技术分享与程序人生</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.zhangxinxu.com/" target="_blank">张鑫旭的博客</a>
+            </h3>
+            <p class="blog-description">CSS专家，Web前端开发技术分享</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.liaoxuefeng.com/" target="_blank">廖雪峰的官方网站</a>
+            </h3>
+            <p class="blog-description">Python、Java、JavaScript等编程教程</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.barretlee.com/" target="_blank">小胡子哥的个人网站</a>
+            </h3>
+            <p class="blog-description">前端技术和Web标准</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.paulgraham.com/" target="_blank">Paul Graham's Essays</a>
+            </h3>
+            <p class="blog-description">创业、技术与人生的深度思考</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.matrix67.com/" target="_blank">Matrix67</a>
+            </h3>
+            <p class="blog-description">数学、算法与程序设计</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://www.laruence.com/" target="_blank">风雪之隅</a>
+            </h3>
+            <p class="blog-description">PHP核心开发者，技术分享</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://mednoter.com/" target="_blank">吕小荣</a>
+            </h3>
+            <p class="blog-description">一个程序员</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://ramsayleung.github.io/zh/" target="_blank">自由庄园</a>
+            </h3>
+            <p class="blog-description">一个努力但平凡的人，希望做个有趣的人, work hard and be nice to people.</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://guozh.net/" target="_blank">老郭种树</a>
+            </h3>
+            <p class="blog-description">好好学习 天天向上</p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://ns.codingnow.com/" target="_blank">云风的 BLOG</a>
+            </h3>
+            <p class="blog-description">思绪来得快去得也快，偶尔会在这里停留</p>
+        </div>
+
+
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://innomad.io/" target="_blank">一挪迈</a>
+            </h3>
+            <p class="blog-description">Innomad, 一挪迈, Innomad一挪迈, 博客, 投资理财, 独立开发, 数字游民</p>
+        </div>
+
+
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="https://sydneyuberer.com/" target="_blank">安迪龙的Blog</a>
+            </h3>
+            <p class="blog-description">一个普通人记录生活和想法的博客</p>
+        </div>
+
+
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="" target="_blank"></a>
+            </h3>
+            <p class="blog-description"></p>
+        </div>
+
+
+
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="" target="_blank"></a>
+            </h3>
+            <p class="blog-description"></p>
+        </div>
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="" target="_blank"></a>
+            </h3>
+            <p class="blog-description"></p>
+        </div>
+
+
+        <div class="blog-card">
+            <h3 class="blog-title">
+                <a href="" target="_blank"></a>
+            </h3>
+            <p class="blog-description"></p>
+        </div>
+
+
+
+
+
+    </div>
+    <footer class="footer">
+        发现更多优质独立博客
+    </footer>
+</body>
+
+</html>
